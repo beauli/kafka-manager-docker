@@ -6,7 +6,7 @@ RUN yum update -y && \
     yum install -y java-1.8.0-openjdk-headless && \
     yum clean all
 
-ENV JAVA_HOME=/usr/java/default/ \
+ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk \
     ZK_HOSTS=localhost:2181 \
     KM_VERSION=1.3.3.17 \
     KM_REVISION=0356db5f2698c36ec676b947c786b8543086dd49 \
